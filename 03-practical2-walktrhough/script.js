@@ -18,7 +18,8 @@ async function main() {
     for (let feature of response.data.features) {
         let lat = feature.geometry.coordinates[1];
         let lng = feature.geometry.coordinates[0];
-        L.marker([lat, lng]).addTo(markerClusterGroup);
+        L.marker([lat, lng]).bindPopup(`<h1>${feature.properties.place}</h1>`).addTo(markerClusterGroup);
+
     }
 
 
