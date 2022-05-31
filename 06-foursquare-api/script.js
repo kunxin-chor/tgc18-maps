@@ -41,4 +41,17 @@ window.addEventListener('DOMContentLoaded', async function () {
             document.querySelector("#results").appendChild(resultElement);
         }
     })
+
+    document.querySelector("#btnShowSearch").addEventListener('click', function(){
+   
+        let searchContainer = document.querySelector('#search-container');
+
+        let isDisplayed =  searchContainer.style.display == 'block';
+        console.log(isDisplayed);
+        if (isDisplayed) {
+            searchContainer.style.display = 'none';
+        } else {
+            searchContainer.style.display = 'block';
+        }
+    });
 })
