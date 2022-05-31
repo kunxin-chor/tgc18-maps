@@ -13,8 +13,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="map"></div>
-    
+    <div id="map-container">
+        <div id="search-container">
+            <input type="text" id="txtSearch"/>
+            <button id="btnSearch">Search</button>
+            <div id="results"></div>
+        </div>    
+        <div id="map"></div>
+    </div>
     <!-- leaflet javascript -->
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
@@ -26,6 +32,10 @@
     <!-- data.js-->
     <script src="data.js"></script>
 
+    <!-- map.js-->
+    <script src="map.js"></script>
+
+    <!-- our own script.js -->
     <script src="script.js"></script> 
 </body>
 </html>
